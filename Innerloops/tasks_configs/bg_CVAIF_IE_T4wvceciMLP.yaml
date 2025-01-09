@@ -1,0 +1,27 @@
+auryn_sim_dir: "Innerloops/cpp_innerloops/" #where the auryn compiled file is w.r.t. the main notebook (shouldn't change)
+hardware: "local"
+Nd: 4
+Lr: 15
+NE: 4096
+NI: 1024
+wee: 0.1
+wei: 0.1
+wie_low: 0
+wie_high: 0.1
+wii: 1
+wmax_low: 10
+wmax_high: 20
+sparseness: 0.1
+length_training_phase: 30
+length_scoring_phase: 20
+length_scoring_window: 5
+target: 10
+N_inputs: 5000
+sparseness_poisson: 0.05
+w_poisson: 0.1
+poisson_rate_low: 4
+poisson_rate_high: 5
+min_rate_checker: 0.1
+max_rate_checker: 100
+tau_checker: 1
+workdir: "Innerloops/cpp_innerloops/sim_workdir/"

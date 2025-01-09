@@ -1,0 +1,28 @@
+auryn_sim_dir: "Innerloops/cpp_innerloops/" #where the auryn compiled file is w.r.t. the main notebook (shouldn't change)
+hardware: "local"
+Nd: 10 #number of datasets (trials) to test every rule on
+Lr: 6 #length of one rule (6 for small polynomial)
+NE: 8000 #number of exc neurons
+NI: 2000 #number of inh neurons
+wee: 0.03 #initial EE weights
+wei: 0.03 #initial EI weights
+wie_low: 0.0 #lower bound for initial IE weights
+wie_high: 0.3 #upper bound for initial IE weights
+wii: 0.3 #initial II weights
+eta: 0.01 #learning rate for plasticity rule
+wmax_low: 2 #lower bound for maximum allowed IE weight
+wmax_high: 3 #upper bound for maximum allowed IE weight
+sparseness: 0.02 #of all recurrent connections
+length_training_phase: 30 #in seconds
+length_scoring_phase: 20 #in seconds, the general phase during which a random window of length_scoring_window is chosen for evaluating the rule
+length_scoring_window: 5 #in seconds
+target: 10 #target exc firing rate for the outer loss
+N_inputs: 5000 #number of input neurons
+sparseness_poisson: 0.05
+w_poisson: 0.1
+poisson_rate_low: 1 #lower bound input firing rate (randomly sampled each trial)
+poisson_rate_high: 5 #upper bound input firing rate
+min_rate_checker: 0.1 #lower bound on pop firing rate when to declare a network lost and stop simulating 
+max_rate_checker: 100 #upper bound
+tau_checker: 1 #timeconstant to compute pop firing rate for the rate checker
+workdir: "Innerloops/cpp_innerloops/sim_workdir/" #directory where to write log files
